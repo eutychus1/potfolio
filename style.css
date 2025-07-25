@@ -1,7 +1,8 @@
 body {
-  font-family: sans-serif;
-  background: #f0f2f5;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #009688, #b2dfdb);
+  color: #fff;
+  line-height: 1.6;
   padding: 20px;
 }
 header {
@@ -18,11 +19,3 @@ footer {
   margin-top: 50px;
   text-align: center;
 }
-cd path/to/my-portfolio
-
-git init
-git add .
-git commit -m "Initial portfolio site"
-git branch -M main
-git remote add origin https://github.com/eutychus1/portfolio.git
-git push -u origin main
