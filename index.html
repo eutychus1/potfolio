@@ -3,25 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Eutychus' Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fff);
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00796b;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #004d40;
+    }
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: 600;
+    }
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeUp 1s ease-in-out;
+    }
+    .project, .achievement, .skill {
+      margin-bottom: 20px;
+    }
+    .project h3, .achievement h3, .skill h3 {
+      color: #00796b;
+    }
+    .timeline {
+      border-left: 3px solid #00796b;
+      padding-left: 15px;
+    }
+    .timeline-item {
+      margin: 10px 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Hi, I'm Eutychus</h1>
-    <p>Tech Enthusiast | Health Innovator</p>
+    <p>Technologist | Creative Problem Solver | Health Innovator</p>
   </header>
 
-  <section>
-    <h2>Projects</h2>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#skills">Skills</a>
+    <a href="#timeline">Journey</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
     <div class="project">
-      <h3>AI Health Bot</h3>
-      <p>An automated WhatsApp assistant powered by Flowise & ChatGPT.</p>
+      <h3>AI Health Support Bot</h3>
+      <p>A smart WhatsApp chatbot that answers health questions using Flowise and ChatGPT. Integrated with n8n for automation.</p>
+    </div>
+    <div class="project">
+      <h3>Immunity Booster Site</h3>
+      <p>A mini-site for promoting cordyceps coffee with health info and e-commerce functionality.</p>
     </div>
   </section>
 
+  <section id="achievements">
+    <h2>🏆 Unique Achievements</h2>
+    <div class="achievement">
+      <h3>Launched 24/7 AI Health Assistant</h3>
+      <p>Developed a real-time assistant for health businesses with zero downtime.</p>
+    </div>
+    <div class="achievement">
+      <h3>Top 10 in Local Hackathon</h3>
+      <p>Built an emergency alert system integrated with Telegram and GPS.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>💡 Tech & Soft Skills</h2>
+    <div class="skill">
+      <h3>Automation Tools</h3>
+      <p>n8n, Zapier, Make</p>
+    </div>
+    <div class="skill">
+      <h3>Frontend Development</h3>
+      <p>HTML, CSS, JavaScript, Tailwind</p>
+    </div>
+    <div class="skill">
+      <h3>Communication & Innovation</h3>
+      <p>Clear communicator with a passion for merging tech + health solutions.</p>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <h2>🕓 My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>2023</strong> - Started learning Python and Automation
+      </div>
+      <div class="timeline-item">
+        <strong>2024</strong> - Built first chatbot with Flowise
+      </div>
+      <div class="timeline-item">
+        <strong>2025</strong> - Launching full personal portfolio and support tools
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📫 Contact Me</h2>
+    <p>Email: merchantboyka@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/eutychus1" target="_blank">github.com/your-username</a></p>
+  </section>
+
   <footer>
-    <p>📫 Contact me: merchantboyka@gmail.com</p>
+    <p>© 2025 Eutychus Mwenda. All rights reserved.</p>
   </footer>
 </body>
 </html>
